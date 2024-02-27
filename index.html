@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game of Life</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+  </head>
+  <body>
+    <div id="grid-container"></div>
+    <div id="buttons">
+      <button id="start"><ion-icon name="play-outline"></ion-icon></button>
+      <button id="pause"><ion-icon name="pause-outline"></ion-icon></button>
+      <button id="step">
+        <ion-icon name="arrow-forward-outline"></ion-icon>
+      </button>
+      <button id="clear">
+        <ion-icon name="close-outline"></ion-icon>
+      </button> 
+      <div id="txt">Generation: <span id="generation-counter">0</span></div>
+    </div>
+
+    <script src="model.js"></script>
+    <script src="view.js"></script>
+    <script src="controller.js"></script>
+    <script src="main.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
